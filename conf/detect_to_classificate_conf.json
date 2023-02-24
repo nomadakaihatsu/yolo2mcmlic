@@ -1,0 +1,51 @@
+{
+  "yolo_labels": [
+    "welding_point",
+    "guide_rail",
+    "welder",
+    "spatter",
+    "arc",
+    "internal_cable",
+    "internal_clamp",
+    "welder_support_clump",
+    "spatter_plate"
+  ],
+  "work_labels": [
+    "launching",
+    "pipe splicing",
+    "guide rail mounting",
+    "internal clamp retraction",
+    "Internal clamp cleaning",
+    "centering",
+    "P-side preparation",
+    "S-side preparation",
+    "P-side welding",
+    "S-side welding",
+    "grinder operation12",
+    "grinder operation6",
+    "grinder operation after welding"
+  ],
+  "classifier_type": "2DConv",
+  "mci_method": "WMA",
+  "num_of_frames": 30,
+  "mci_x": 224,
+  "mci_y": 224,
+  "preview_x": 1920,
+  "preview_y": 1080,
+  "preview_yolo_x": 1100,
+  "preview_yolo_y": 600,
+  "preview_table_x": 300,
+  "preview_chart_x": 1500,
+  "preview_chart_height" : 30,
+  "conf_thred": 0.5,
+  "show_preview": true,
+  "save_preview": true,
+  "mcmlci_model_path": "weights/mcmlci_model.pth",
+  "yolo_argument": {
+    "weights": "weights/best.pt",
+    "imgsz": 640,
+    "conf_thres": 0.25,
+    "iou_thres": 0.45,
+    "device": "cuda"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "img-size" : 640,
+  "conf-thres" : 0.25,
+  "iou-thres" : 0.45,
+  "device" : "cuda",
+  "view-img" : false,
+  "save-txt" : true,
+  "save-conf" : true,
+  "nosave" : false,
+
+
+}
